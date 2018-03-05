@@ -13,6 +13,8 @@
 
 (defvar *maxPrime* 2)
 
+(format t "This program will find all of the prime numbers between 2 and an upper bound!~%") (finish-output)
+
 ;;; Prompt user for where to find Primes
 (let ((userInput ""))
     (setf userInput (prompt-read "What number do you want to stop finding primes at? "))
@@ -21,13 +23,13 @@
 
 ;;; If the number is valid run then sieve
 
-;(defvar *primeList* (list 0 1 3 4 2)) ; create a list of integers to store the final primes
-
 (cond ((and (> *maxPrime* 2) (not (equal *maxPrime* NIL)))
-    (print "Number is valid beginning")
+    (print "The number you entered is valid beginning")
     (defvar *primeList* (makeSquence *maxPrime*)) ; Figure out how to make the squence
-    ;(loop for x in *primeList*
-    ;    do())
+    (print *primeList*)
+    (loop for x in *primeList*
+        do (loop for y from 2 while (<= (* x y) *maxPrime*)
+            do (setf *primeList* (REMOVE-IF-NOT #'(lambda (q) (not (equal q (* x y)))) *primeList*))))
     (print *primeList*)))
 
 (print *maxPrime*)
