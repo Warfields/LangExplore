@@ -8,9 +8,8 @@
     (read-line *query-io*)
 )
 
-(defun makeSquence (max) 
-    (loop for n from 2 to max
-    do(append n)))
+(defun makeSquence (max) ; This creates a list from 2 to a number!
+    (loop for n from 2 to max collect n))
 
 (defvar *maxPrime* 2)
 
@@ -26,6 +25,9 @@
 
 (cond ((and (> *maxPrime* 2) (not (equal *maxPrime* NIL)))
     (print "Number is valid beginning")
-    (print (makeSquence 5))))
+    (defvar *primeList* (makeSquence *maxPrime*)) ; Figure out how to make the squence
+    ;(loop for x in *primeList*
+    ;    do())
+    (print *primeList*)))
 
 (print *maxPrime*)
