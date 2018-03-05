@@ -11,17 +11,19 @@
     (loop for n from 2 to max collect n))
 
 
-(defvar *maxPrime* 2)
+(defvar *maxPrime* 20000)
 (defvar *primeList*)
 
 (defun main ()
 (format t "This program will find all of the prime numbers between 2 and an upper bound!~%") (finish-output)
 
+#||
 ;;; Prompt user for where to find Primes
 (let ((userInput ""))
     (setf userInput (prompt-read "What number do you want to stop finding primes at? "))
     (setf *maxPrime* (parse-integer userInput :junk-allowed t))
 )
+||#
 
 ;;; If the number is valid run then sieve
 
