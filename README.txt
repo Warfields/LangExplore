@@ -4,3 +4,5 @@ Navigate to the dirictory containing "primes.cl"
 "(LOAD "primes.cl")"
 
 Or... Just use make!
+
+To test speed make and then in bash "time ./primes"
