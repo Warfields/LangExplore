@@ -10,7 +10,11 @@
 (defun makeSquence (max) ; This creates a list from 2 to a number!
     (loop for n from 2 to max collect n))
 
+
 (defvar *maxPrime* 2)
+(defvar *primeList*)
+
+(defun main ()
 (format t "This program will find all of the prime numbers between 2 and an upper bound!~%") (finish-output)
 
 ;;; Prompt user for where to find Primes
@@ -23,8 +27,8 @@
 
 (cond ((and (> *maxPrime* 2) (not (equal *maxPrime* NIL))) ; Check if the user number is viable
     (print "The number you entered is valid beginning")
-    (defvar *primeList* (makeSquence *maxPrime*)) ; Allocates list space
+    (setf *primeList* (makeSquence *maxPrime*)) ; Allocates list space
     (loop for x in *primeList*
         do (loop for y from 2 while (<= (* x y) *maxPrime*)
             do (setf *primeList* (REMOVE-IF-NOT #'(lambda (q) (not (equal q (* x y)))) *primeList*))))
-    (print *primeList*)))
+    (print *primeList*))))
