@@ -1,5 +1,4 @@
-; Author: William Brickner
-
+;;;; Author: William Brickner
 (load "lcomp.cl")
 
 (defvar *x* 0)
