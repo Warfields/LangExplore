@@ -1,10 +1,10 @@
 Speaking Weird
 ==============
-A Tour of Comman LISP
+A Tour of Common LISP
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-:Author: Samuel Warfield, Billy Brickner, Adam Ficke
-:Date: 2018-03-08
+:Author: Samuel Warfield, Billy Brickner, Adam Frick
+:Date: 2018-03-19
 
 About This Presentation
 -----------------------
@@ -14,9 +14,9 @@ About This Presentation
 
 .. note::
 
-    LISP has hundreds if not thousands implimentations. Comman LISP is
+    LISP has hundreds if not thousands implimentations. Common LISP is
     not implimentation its a standard, thus there are hundrends of of 
-    implimentations of Comman LISP so understand what you're messing with!
+    implimentations of Common LISP so understand what you're messing with!
 
 For all examples in this presentation we used sbcl (Steel Bank Common Lisp)
 
@@ -24,6 +24,10 @@ For all examples in this presentation we used sbcl (Steel Bank Common Lisp)
 
 Background
 ----------
+
+LISP (A Very Old Language)
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 
 Markup Languages
 ~~~~~~~~~~~~~~~~
