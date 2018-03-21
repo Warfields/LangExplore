@@ -34,16 +34,28 @@
 
 \setbeamertemplate{headline}{}
 
+% Courtesy of http://jack.rosenth.al/hacking-docutils.html
+\newfontfamily\emojifont[]{Noto Emoji}
+\newcommand\DUroleemoji[1]{{\emojifont #1}}
+
 \setbeamertemplate{footline}{%
 \leavevmode%
 \resizebox{\paperwidth}{!}{%
 \colorbox{csmblue}{\makebox[0.1\paperwidth]{}}%
 \colorbox{csmred}{\makebox[0.9\paperwidth]{}}}
 \resizebox{\paperwidth}{!}{%
-\colorbox{csmgrey}{\begin{minipage}{0.7\paperwidth}
-\textcolor{csmblue}{\headingfont\large \insertauthor}
-\end{minipage}\begin{minipage}{0.5\paperwidth}
-\flushright{\textcolor{csmblue}{\includegraphics[scale=0.087]{graphics/acm-brand/logo/triangle/icon.pdf}}}%\headingfont\bfseries\large Mines ACM}} %commented out code is an alturnative to the logo
+
+\colorbox{csmgrey}{\begin{minipage}{0.8\paperwidth}
+\textcolor{csmblue}{\headingfont\large Common Lisp}
+%\textcolor{csmblue}{\headingfont\large \insertsubject}
+\end{minipage}\begin{minipage}{0.3\paperwidth}
+
+\flushright{\textcolor{csmblue}{\includegraphics[scale=0.087]{graphics/full.pdf}}}%\headingfont\bfseries\large Mines ACM}} %commented out code is an alturnative to the logo
+
+
+%\flushright{\textcolor{csmblue}{\includegraphics[scale=0.087]{graphics/acm-brand/logo/triangle/icon.pdf}}}
+%\headingfont\bfseries\large Mines ACM % ACM text instead of emblem
+
 \end{minipage}}}%
 \vskip0pt%
 }
@@ -90,4 +102,3 @@
 \setlength\parskip{10pt plus 1pt minus 10pt}
 
 \beamertemplatenavigationsymbolsempty%
-

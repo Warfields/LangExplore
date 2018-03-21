@@ -1,4 +1,4 @@
-RSTFILES=lug-docutils.rst
+RSTFILES =$(wildcard ./*.rst)
 43PDFFILES=$(patsubst %.rst,out/%-43.pdf,$(RSTFILES))
 169PDFFILES=$(patsubst %.rst,out/%-169.pdf,$(RSTFILES))
 1610PDFFILES=$(patsubst %.rst,out/%-1610.pdf,$(RSTFILES))

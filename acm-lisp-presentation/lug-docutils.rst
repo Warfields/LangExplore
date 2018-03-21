@@ -15,7 +15,7 @@ About This Presentation
 .. note::
 
     LISP has hundreds if not thousands implimentations. Common LISP is
-    not implimentation its a standard, thus there are hundrends of of 
+    not implimentation, its an ANSI standard, thus there are hundrends of of 
     implimentations of Common LISP so understand what you're messing with!
 
 For all examples in this presentation we used sbcl (Steel Bank Common Lisp)
@@ -32,7 +32,7 @@ LISP (A Very Old Language)
 Markup Languages
 ~~~~~~~~~~~~~~~~
 
-**Markup languages** are used to annotate semantical features of a document.
+**Markup languages** are usedasfd to annotate semantical features of a document.
 Typically, these semantical features also describe how the text should be
 presented (a **presentational markup language**), but this is not always the
 case (e.g., with XML).
